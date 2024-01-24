@@ -1,0 +1,333 @@
+/* fonts , using Fredoka mostly , other ones might come in handy tho
+font-family: 'Fascinate', system-ui;
+font-family: 'Forum', serif;
+font-family: 'Fredoka', sans-serif;
+font-family: 'Permanent Marker', cursive; */
+
+/* Media Query for the header on small screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px;
+        margin-right: 21px;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+}
+
+/* HEADER */
+header {
+    background-color: #fa1470c3;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+#logo img{
+    height: 50%;
+    width: 50%;
+    margin-left: 30px;
+}
+
+/* BODY */
+body {
+    background-color: #fa1470c3;
+}
+
+/* HERO SECTION */
+#hero {
+    max-height: 380px; 
+}
+
+.hero-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+#inspired img {
+    height: auto;
+    width: 20%;
+}
+
+#inspired {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+/* NAVBAR BUTTONS */
+
+.header-buttons,.mealButtons {
+    display: flex;
+    margin-right: 30px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: x-large;
+    border-color: white;
+}
+
+#macroTrackerButton, #mealPlanButton, #journalButton,#breakfastButton,#lunchButton,#dinnerButton {
+    color: rgb(255, 5, 134);
+    border: 2px solid white;
+    background-color: white;
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.header-buttons a {
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+#macroTrackerButton:hover, #mealPlanButton:hover,#journalButton:hover,
+#breakfastButton:hover,#lunchButton:hover,#dinnerButton:hover {
+    background-color: rgb(81, 212, 94);
+    border: 2px solid rgb(81, 212, 94);
+    color: white; 
+    transform: scale(1.1); 
+}
+
+#macroTrackerButton {
+    margin-right: 30px; 
+}
+
+/* MEAL CARDS */
+.cards-container {
+    max-width: 85%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.meal-card {
+    max-width: 15rem; 
+    padding: 10px;
+    border-radius: 2%; 
+    max-height: fit-content;
+}
+
+.meal-card-image-container {
+    width: 100%; 
+    height: 250px; 
+    overflow: hidden;
+    position: relative;
+    border-radius: 5%; 
+}
+
+.meal-card-image-container img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer; 
+    object-fit: cover; 
+    border-radius: 5%; 
+}
+
+/* Media Query for the meal cards on small screens */
+@media (max-width: 768px) {
+    .col-12.mb-4 {
+        margin-bottom: 1rem;
+    }
+    
+    .meal-card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* veggie icon */
+.fa-leaf {
+    margin-left: 5px; 
+}
+
+/* meal buttons */
+.button-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+button {
+    border-radius: 5%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-style {
+        margin: 0 10px;    
+}
+
+/* The "Add To" buttons */
+
+.macro-button,.planner-button {
+    
+    background-color: rgb(255, 17, 112);
+    margin-bottom: 4%;
+    font-size: medium;
+    font-weight: bold;
+    border-color: white;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    height: min-content;
+    padding: 6px; /* Adjust as needed */
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.macro-button:hover,.planner-button:hover {
+background-color: rgb(81, 212, 94);
+border: 1px solid rgb(81, 212, 94);
+color: white; 
+}
+
+/* THE MEAL MODAL */
+.modal-content {
+    background-color: #fefefe;
+    color: rgb(0, 0, 0);
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; 
+}
+
+#modalMealName {
+    color: deeppink;
+    font-weight: bold;
+}
+
+#modalPrepTime {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#macroMealModal ul {
+ color: deeppink;
+}
+
+#modalMacrosTitle, #modalIngredientsTitle, #modalRecipeTitle {
+    color: rgb(5, 192, 30);
+}
+
+
+#modalIngredients li::marker {
+    color: deeppink; 
+}
+
+#modalRecipe li::marker {
+    color: deeppink; 
+    font-weight: bold;
+}
+
+/* The Modal Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: deeppink;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modalPrepTime {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.fa-clock-o {
+    margin-right: 5px;
+}
+
+/* MACRO TRACKER */ 
+
+#macroModal h2 {
+    color: deeppink;
+    margin-bottom: 3%;
+    font-size: 50px;
+}
+
+#totalProtein,#totalCarbs, #totalFat, #totalCalories {
+    color: deeppink;
+}
+
+#totalProtein {
+    margin-top: 2%;
+}
+
+.meal-name{
+    color: green;
+}
+
+.meal-entry {
+    margin-bottom: 3%;
+}
+
+/* MEAL PLANNER: slide in screen */
+#mealPlannerContainer {
+    position: relative;
+  }
+  
+  #slideOutMenu {
+    position: fixed;
+    top: 0;
+    right: -500px; 
+    width: 500px;
+    height: 100%;
+    background-color: rgb(81, 212, 94);
+    color: #fff;
+    transition: right 0.3s ease; 
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  #closeMenuBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #dayTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #dayTable th, #dayTable td {
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #dayTable th {
+    background-color: rgb(255, 17, 112);
+  }
+  
+  #content {
+    margin-right: 0; 
+    transition: margin-right 0.3s ease; 
+  }
+  
+  #openMenuBtn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 3;
+  }
