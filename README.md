@@ -1,4 +1,4 @@
 ## MEAL MATE
 
-Meal is a meal planning an organisation app. 
+Meal Mate is a meal planning and organisation app. 
 
